@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Go Game v3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js Go Game</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
   <script src="sketch.js" defer></script>
 </head>
 <body>
-  <h1>Go Game v3</h1>
+  <h1>Go Game (19×19 Board)</h1>
   <div id="canvas-container"></div>
   <div id="info">
     <p>Current Player: <span id="player">Black</span></p>
-    <button id="undo">Undo</button>
+    <p>Black Captures: <span id="black-captures">0</span></p>
+    <p>White Captures: <span id="white-captures">0</span></p>
     <button id="restart">New Game</button>
+    <button id="undo">Undo</button>
   </div>
 </body>
 </html>
