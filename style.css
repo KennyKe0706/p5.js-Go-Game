@@ -1,7 +1,74 @@
-html, body {
+
+/* --- Page & Font --- */
+body {
   margin: 0;
-  padding: 0;
+  padding: 2rem;
+  background: #f2e5cf;               /* warm parchment tone */
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-canvas {
-  display: block;
+
+/* --- Canvas Container & Board --- */
+#canvas-container {
+  background: #dec89a;                /* light wood panel */
+  padding: 1rem;
+  border: 4px solid #8b5e3c;          /* darker wood edge */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+#canvas-container canvas {
+  display: block;                     /* removes inline-gap */
+  border-radius: 8px;
+}
+
+/* --- Info Panel --- */
+#info {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background: rgba(255,255,255,0.8);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Labels & Counts */
+#info p {
+  margin: 0;
+  font-size: 1rem;
+}
+#info span {
+  font-weight: bold;
+  color: #1f1f1f;
+}
+
+/* --- Buttons --- */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #8b5e3c;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+button:hover {
+  background: #a0784c;
+  transform: translateY(-1px);
+}
+button:active {
+  transform: translateY(1px);
+}
+
+/* --- Header --- */
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #5a3e1b;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
